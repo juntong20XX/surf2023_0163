@@ -1,0 +1,11 @@
+[submodule "repositories about speech source separation/demucs"]
+	path = repositories about speech source separation/demucs
+	url = https://github.com/facebookresearch/demucs.git
+	branch = main
+[submodule "repositories about speech source separation/asteroid"]
+	path = repositories about speech source separation/asteroid
+	url = https://github.com/asteroid-team/asteroid.git
+	branch = master
+[submodule "challenges for references/DNS-Challenge"]
+	path = challenges for references/DNS-Challenge
+	url = https://github.com/microsoft/DNS-Challenge.git

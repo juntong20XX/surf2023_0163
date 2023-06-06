@@ -1,3 +1,9 @@
+# Person files
+*.pdf
+*.docx
+mails/
+
+# Python
 venv/
 ENV/
 env.bak/
