@@ -1,0 +1,73 @@
+% tikzpic.tex
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+\usepackage{pgfplots}
+\usepackage{pgf}
+\usepackage{tikzscale}
+\usepackage{tikz}
+\pgfplotsset{compat=newest}
+\usetikzlibrary{arrows,calc,positioning,shapes.geometric,math}
+
+\usepackage{amsmath, amssymb, amsthm}
+\DeclareMathOperator{\Conv}{Conv1d}
+\DeclareMathOperator{\Convtwo}{Conv2d}
+\DeclareMathOperator{\Convtr}{ConvTr1d}
+\DeclareMathOperator{\ReLU}{Relu}
+\DeclareMathOperator{\GLU}{GLU}
+\DeclareMathOperator{\SDR}{SDR}
+
+\begin{document}
+
+\def\pscale{1}
+\begin{tikzpicture}[
+    every node/.style={scale=\pscale},
+    conv/.style={shape=rectangle,
+        draw, inner xsep=0pt, inner ysep=5pt,
+        draw=black!90,fill=gray!5},
+    rnn/.style={rounded corners=1pt,rectangle,draw=black!90,inner xsep=0pt, inner ysep=5pt,
+        fill=blue!5,},
+    inp/.style={rounded corners=1pt,rectangle,draw=black!90,
+        fill=purple!5,minimum width=1.5cm, minimum height=0.7cm},
+    outp/.style={rounded corners=1pt,rectangle,draw=black!90,
+        fill=cyan!5,minimum width=0.7cm, minimum height=0.7cm},
+    skip/.style={line width=0.2mm, ->},
+]
+    \def\yshift{1.5em}
+    \def\base{9cm}
+
+
+    \node (e0) [rnn, minimum width=\base, anchor=south] at (0, 0)
+        {Subject $s$ layer: $M_s \cdot x_t$, $M_s \in \mathbb{R}^{d\times d}$};
+
+
+    \node (e1) [conv, minimum width=\base, anchor=south] at
+        ($(e0.north) + (0, \yshift)$)
+        {$\mathrm{ReLU}(BN(\mathrm{Conv}(C_{\mathrm{in}}{=}d, C_{\mathrm{out}}{=}320, K{=}3, D{=}1)))$};
+
+    \node (e2) [conv, minimum width=\base, anchor=south] at
+        ($(e1.north) + (0, \yshift)$)
+        {$\mathrm{ReLU}(BN(\mathrm{Conv}(C_{\mathrm{in}}{=}320, C_{\mathrm{out}}{=}320, K{=}3, D{=}2^{k\%5})))$};
+
+    \node (e2_around) [shape=rectangle, draw, draw=red!50, dashed, minimum width=\base + 0.5cm,
+                       minimum height=1.4cm, line width=1.2pt] at (e2) {};
+    \node [red!50, anchor=west] at (e2_around.east) {for $k \in [1 \ldots 8]$};
+
+    \node (e4) [conv, minimum width=\base, anchor=south] at
+        ($(e2.north) + (0, \yshift)$)
+        {$BN(\mathrm{Conv}(C_{\mathrm{in}}{=}320, C_{\mathrm{out}}{=}f, K{=}3, D{=}2^4)$};
+
+    \draw [->] (e1.north) -- node (mid) {} (e2.south);
+    \draw [->] (e2.north) -- (e4.south);
+    \draw [-] (mid.center) -- ++(-0.51*\base, 0) -- ++ (0, 1.2cm) -- ++(0.51*\base,0);
+
+    \node (input1) [inp] at ($(e0.south) + (-0.25 * \base,-1cm)$) {$x_1$};
+    \node (input2) [inp,anchor=west] at ($(input1.east) + (0.4cm, 0)$) {$x_2$};
+    \node (input3) [inp,anchor=west] at ($(input2.east) + (0.4cm, 0)$) {$x_3$};
+    \node (input4) [inp,anchor=west] at ($(input3.east) + (0.4cm, 0)$) {$[\ldots]$};
+    \node (output1) [outp] at ($(e4.north) + (-0.25 * \base,1cm)$) {$\hat{y}_1$};
+    \node (output2) [outp,anchor=west] at ($(output1.east) + (1.0cm, 0)$) {$\hat{y}_2$};
+    \node (output3) [outp,anchor=west] at ($(output2.east) + (1.0cm, 0)$) {$\hat{y}_3$};
+    \node (output4) [outp,anchor=west] at ($(output3.east) + (1.0cm, 0)$) {$\ldots$};
+\end{tikzpicture}
+
+
+\end{document}

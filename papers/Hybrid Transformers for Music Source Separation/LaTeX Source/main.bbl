@@ -1,46 +1,37 @@
 \begin{thebibliography}{10}
 
 \bibitem{transformer}
-Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones,
-  Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin,
+Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan~N. Gomez, Lukasz Kaiser, and Illia Polosukhin,
 \newblock ``Attention is all you need,''
 \newblock {\em CoRR}, vol. abs/1706.03762, 2017.
 
 \bibitem{defossez2021hybrid}
 Alexandre D{\'e}fossez,
 \newblock ``Hybrid spectrogram and waveform source separation,''
-\newblock in {\em Proceedings of the ISMIR 2021 Workshop on Music Source
-  Separation}, 2021.
+\newblock in {\em Proceedings of the ISMIR 2021 Workshop on Music Source Separation}, 2021.
 
 \bibitem{musdb}
-Zafar Rafii, Antoine Liutkus, Fabian-Robert Stöter, Stylianos~Ioannis
-  Mimilakis, and Rachel Bittner,
+Zafar Rafii, Antoine Liutkus, Fabian-Robert Stöter, Stylianos~Ioannis Mimilakis, and Rachel Bittner,
 \newblock ``The musdb18 corpus for music separation,'' 2017.
 
 \bibitem{sisec15}
 Nobutaka Ono, Zafar Rafii, Daichi Kitamura, Nobutaka Ito, and Antoine Liutkus,
 \newblock ``{The 2015 Signal Separation Evaluation Campaign},''
-\newblock in {\em {International Conference on Latent Variable Analysis and
-  Signal Separation (LVA/ICA)}}, Aug. 2015.
+\newblock in {\em {International Conference on Latent Variable Analysis and Signal Separation (LVA/ICA)}}, Aug. 2015.
 
 \bibitem{musdb18-hq}
-Zafar Rafii, Antoine Liutkus, Fabian-Robert Stöter, Stylianos~Ioannis
-  Mimilakis, and Rachel Bittner,
+Zafar Rafii, Antoine Liutkus, Fabian-Robert Stöter, Stylianos~Ioannis Mimilakis, and Rachel Bittner,
 \newblock ``Musdb18-hq - an uncompressed version of musdb18,'' Aug. 2019.
 
 \bibitem{layerscale}
-Hugo Touvron, Matthieu Cord, Alexandre Sablayrolles, Gabriel Synnaeve, and
-  Herv{\'e} J{\'e}gou,
+Hugo Touvron, Matthieu Cord, Alexandre Sablayrolles, Gabriel Synnaeve, and Herv{\'e} J{\'e}gou,
 \newblock ``Going deeper with image transformers,''
-\newblock in {\em Proceedings of the IEEE/CVF International Conference on
-  Computer Vision}, 2021.
+\newblock in {\em Proceedings of the IEEE/CVF International Conference on Computer Vision}, 2021.
 
 \bibitem{Rombach_2022_CVPR}
-Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj\"orn
-  Ommer,
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj\"orn Ommer,
 \newblock ``High-resolution image synthesis with latent diffusion models,''
-\newblock in {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
-  Pattern Recognition (CVPR)}, June 2022, pp. 10684--10695.
+\newblock in {\em Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, June 2022, pp. 10684--10695.
 
 \bibitem{brown2020language}
 Tom B.~Brown et~al.,
@@ -49,10 +40,8 @@ Tom B.~Brown et~al.,
 
 \bibitem{convtasnet}
 Yi~Luo and Nima Mesgarani,
-\newblock ``Conv-tasnet: Surpassing ideal time--frequency magnitude masking for
-  speech separation,''
-\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
-  Processing}, 2019.
+\newblock ``Conv-tasnet: Surpassing ideal time--frequency magnitude masking for speech separation,''
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language Processing}, 2019.
 
 \bibitem{demucsv2}
 Alexandre Défossez, Nicolas Usunier, Léon Bottou, and Francis Bach,
@@ -60,21 +49,17 @@ Alexandre Défossez, Nicolas Usunier, Léon Bottou, and Francis Bach,
 
 \bibitem{umx}
 F.-R. St\"oter, S.~Uhlich, A.~Liutkus, and Y.~Mitsufuji,
-\newblock ``Open-unmix - a reference implementation for music source
-  separation,''
+\newblock ``Open-unmix - a reference implementation for music source separation,''
 \newblock {\em Journal of Open Source Software}, 2019.
 
 \bibitem{d3net}
 Naoya Takahashi and Yuki Mitsufuji,
-\newblock ``D3net: Densely connected multidilated densenet for music source
-  separation,'' 2020.
+\newblock ``D3net: Densely connected multidilated densenet for music source separation,'' 2020.
 
 \bibitem{lasaft}
 Woosung Choi, Minseok Kim, Jaehwa Chung, and Soonyoung Jung,
-\newblock ``Lasaft: Latent source attentive frequency transformation for
-  conditioned source separation,''
-\newblock in {\em IEEE International Conference on Acoustics, Speech and Signal
-  Processing (ICASSP)}, 2021.
+\newblock ``Lasaft: Latent source attentive frequency transformation for conditioned source separation,''
+\newblock in {\em IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 2021.
 
 \bibitem{bsrnn}
 Yi~Luo and Jianwei Yu,
@@ -82,51 +67,40 @@ Yi~Luo and Jianwei Yu,
 
 \bibitem{luo2020dual}
 Yi~Luo, Zhuo Chen, and Takuya Yoshioka,
-\newblock ``Dual-path rnn: efficient long sequence modeling for time-domain
-  single-channel speech separation,''
-\newblock in {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
-  Speech and Signal Processing (ICASSP)}. IEEE, 2020, pp. 46--50.
+\newblock ``Dual-path rnn: efficient long sequence modeling for time-domain single-channel speech separation,''
+\newblock in {\em ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}. IEEE, 2020, pp. 46--50.
 
 \bibitem{waveunet}
 Daniel Stoller, Sebastian Ewert, and Simon Dixon,
-\newblock ``Wave-u-net: A multi-scale neural network for end-to-end audio
-  source separation,''
+\newblock ``Wave-u-net: A multi-scale neural network for end-to-end audio source separation,''
 \newblock {\em arXiv preprint arXiv:1806.03185}, 2018.
 
 \bibitem{kuielab}
 Minseok Kim, Woosung Choi, Jaehwa Chung, Daewon Lee, and Soonyoung Jung,
-\newblock ``Kuielab-mdx-net: A two-stream neural network for music demixing,''
-  2021.
+\newblock ``Kuielab-mdx-net: A two-stream neural network for music demixing,'' 2021.
 
 \bibitem{mdx2021}
-Yuki Mitsufuji, Giorgio Fabbro, Stefan Uhlich, Fabian-Robert Stöter, Alexandre
-  D{\'{e}}fossez, Minseok Kim, Woosung Choi, Chin-Yun Yu, and Kin-Wai Cheuk,
+Yuki Mitsufuji, Giorgio Fabbro, Stefan Uhlich, Fabian-Robert Stöter, Alexandre D{\'{e}}fossez, Minseok Kim, Woosung Choi, Chin-Yun Yu, and Kin-Wai Cheuk,
 \newblock ``Music demixing challenge 2021,''
 \newblock {\em Frontiers in Signal Processing}, vol. 1, jan 2022.
 
 \bibitem{spleeter}
 Romain Hennequin, Anis Khlif, Felix Voituret, and Manuel Moussallam,
-\newblock ``Spleeter: a fast and efficient music source separation tool with
-  pre-trained models,''
+\newblock ``Spleeter: a fast and efficient music source separation tool with pre-trained models,''
 \newblock {\em Journal of Open Source Software}, 2020.
 
 \bibitem{subakan2021attention}
-Cem Subakan, Mirco Ravanelli, Samuele Cornell, Mirko Bronzi, and Jianyuan
-  Zhong,
+Cem Subakan, Mirco Ravanelli, Samuele Cornell, Mirko Bronzi, and Jianyuan Zhong,
 \newblock ``Attention is all you need in speech separation,''
-\newblock in {\em ICASSP 2021-2021 IEEE International Conference on Acoustics,
-  Speech and Signal Processing (ICASSP)}. IEEE, 2021, pp. 21--25.
+\newblock in {\em ICASSP 2021-2021 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}. IEEE, 2021, pp. 21--25.
 
 \bibitem{2Dpe}
 Zelun Wang and Jyh-Charn Liu,
-\newblock ``Translating math formula images to latex sequences using deep
-  neural networks with sequence-level training,'' 2019.
+\newblock ``Translating math formula images to latex sequences using deep neural networks with sequence-level training,'' 2019.
 
 \bibitem{xFormers2021}
-Benjamin Lefaudeux, Francisco Massa, Diana Liskovich, Wenhan Xiong, Vittorio
-  Caggiano, Sean Naren, Min Xu, Jieru Hu, Marta Tintore, and Susan Zhang,
-\newblock ``xformers: A modular and hackable transformer modelling library,''
-  \url{https://github.com/facebookresearch/xformers}, 2021.
+Benjamin Lefaudeux, Francisco Massa, Diana Liskovich, Wenhan Xiong, Vittorio Caggiano, Sean Naren, Min Xu, Jieru Hu, Marta Tintore, and Susan Zhang,
+\newblock ``xformers: A modular and hackable transformer modelling library,'' \url{https://github.com/facebookresearch/xformers}, 2021.
 
 \bibitem{adam}
 Diederik~P. Kingma and Jimmy Ba,
